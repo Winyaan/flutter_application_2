@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/charger.dart';
+import 'package:flutter_application_2/login.dart';
 
 class Aboutus extends StatelessWidget {
   const Aboutus({super.key});
@@ -8,6 +10,17 @@ class Aboutus extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Center(child: Text("Winyarit")),
+          actions: [
+          IconButton(
+            icon: const Icon(Icons.arrow_right_alt_sharp),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
+            },
+          ),
+        ],
         ),
         body: Column(
           children: [
@@ -44,66 +57,6 @@ class Aboutus extends StatelessWidget {
                 ),
                 Text("5 กันยายน 2555")
               ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  const Text("Volt :"),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.all(10.0),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        hintText: "Insert Here",
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  const Text("Charged :"),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.all(10.0),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        hintText: "Insert Here",
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  const Text("Current :"),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.all(10.0),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        hintText: "Insert Here",
-                      ),
-                    ),
-                  ),
-                ],
-              ),
             ),
           ],
         ),

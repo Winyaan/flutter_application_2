@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/aboutus.dart';
 import 'package:flutter_application_2/charger.dart';
-import 'package:flutter_application_2/homepage.dart';
+import 'package:flutter_application_2/aboutus.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           useMaterial3: true,
           appBarTheme: AppBarTheme(color: Colors.green)),
-      home: const Homepage(),
+      home: const Aboutus() ,
     );
   }
 }
