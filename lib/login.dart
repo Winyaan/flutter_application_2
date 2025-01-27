@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/aboutus.dart';
-import 'package:flutter_application_2/display.dart';
+import 'aboutus.dart';
+import 'display.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});

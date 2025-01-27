@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/charger.dart';
-import 'package:flutter_application_2/login.dart';
+import 'charger.dart';
+import 'login.dart';
 
 class Aboutus extends StatelessWidget {
   const Aboutus({super.key});
