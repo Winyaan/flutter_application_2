@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/httpbasic.dart';
-import 'package:flutter_application_2/my_futurebuilder_page.dart';
+import 'package:flutter_application_2/my_listpage.dart';
+import 'httpbasic.dart';
+import 'my_futurebuilder_page.dart';
 import 'aboutus.dart';
 import 'list.dart';
-
+import 'detail_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           useMaterial3: true,
           appBarTheme: AppBarTheme(color: Colors.green)),
-      home: Httpbasic() ,
+      home: MyListPage() ,
     );
   }
 }
